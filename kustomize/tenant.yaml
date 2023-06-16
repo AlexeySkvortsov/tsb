@@ -6,3 +6,16 @@ metadata:
     tsb.tetrate.io/organization: tetrate
 spec:
   displayName: Tetrate
+---
+apiVersion: tsb.tetrate.io/v2
+  kind: Workspace
+  metadata:
+    name: bookinfo-ws
+    annotations:
+      tsb.tetrate.io/organization: tetrate
+      tsb.tetrate.io/tenant: tetrate
+  spec:
+    namespaceSelector:
+      names:
+        - "*/bookinfo"
+---

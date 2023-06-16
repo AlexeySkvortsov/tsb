@@ -1,8 +1,8 @@
 apiVersion: tsb.tetrate.io/v2
-  kind: Tenant
-  metadata:
-    name: tetrate
-    annotations:
-      tsb.tetrate.io/organization: tetrate
-  spec:
-    displayName: Tetrate
+kind: Tenant
+metadata:
+  name: tetrate
+  annotations:
+    tsb.tetrate.io/organization: tetrate
+spec:
+  displayName: Tetrate

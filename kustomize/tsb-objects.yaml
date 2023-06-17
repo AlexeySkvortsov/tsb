@@ -34,32 +34,6 @@ items:
       names:
         - "*/bookinfo"
     configMode: BRIDGED
-- apiVersion: traffic.tsb.tetrate.io/v2
-  kind: Group
-  metadata:
-    name: bookinfo-traffic
-    annotations:
-      tsb.tetrate.io/organization: tetrate
-      tsb.tetrate.io/tenant: tetrate
-      tsb.tetrate.io/workspace: bookinfo-ws
-  spec:
-    namespaceSelector:
-      names:
-        - "*/bookinfo"
-    configMode: BRIDGED
-- apiVersion: security.tsb.tetrate.io/v2
-  kind: Group
-  metadata:
-    name: bookinfo-security
-    annotations:  
-      tsb.tetrate.io/organization: tetrate
-      tsb.tetrate.io/tenant: tetrate
-      tsb.tetrate.io/workspace: bookinfo-ws
-  spec:
-    namespaceSelector:
-      names:
-        - "*/bookinfo"
-    configMode: BRIDGED
 - apiVersion: gateway.tsb.tetrate.io/v2
   kind: IngressGateway
   metadata:

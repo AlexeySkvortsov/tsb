@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
   - bookinfo.yaml
   - tenant.yaml
-  - workspace.yaml
